@@ -10,112 +10,120 @@
 
 <body>
 
-<header class="header" id="inicio">
-    <div class="header-contenido">
+    <header class="header" id="inicio">
+        <div class="header-contenido">
 
-        <img src="img/logo.png" alt="Logo Gamer Week" class="header-logo">
+            <img src="img/logo.png" alt="Logo Gamer Week" class="header-logo">
 
-        <div class="header-texto">
-            <h1>Gamer Week</h1>
-            <p>Lo último en Video Juegos</p>
+            <div class="header-texto">
+                <h1>Gamer Week</h1>
+                <p>Lo último en Video Juegos</p>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="productos" id="juegos">
+        <h2>Video juegos Destacados</h2>
+
+        <div class="contenedor-productos">
+            <a href="https://www.fortnite.com/download?lang=es-ES" target="_blank" class="card-link">
+                <div class="card">
+                    <img src="img/Fortnite.jpg" alt="Fornite">
+                    <h3>Fornite</h3>
+                    <p>Juego battle royale donde 100 jugadores compiten por ser el último en pie en un mapa dinámico con
+                        construcción estratégica.</p>
+                </div>
+            </a>
+
+            <a href="https://www.leagueoflegends.com/es-es/" target="_blank" class="card-link">
+                <div class="card">
+                    <img src="img/LeagueofLegends.jpg" alt="LeagueofLegends">
+                    <h3>League of Legends</h3>
+                    <p>Juego de estrategia 5v5 donde el trabajo en equipo y la táctica son clave para destruir la base
+                        enemiga.</p>
+                </div>
+            </a>
+
+            <a href="https://www.ea.com/es/games/apex-legends/apex-legends" target="_blank" class="card-link">
+                <div class="card">
+                    <img src="img/Apex.jpg" alt="Apex">
+                    <h3>Apex</h3>
+                    <p>Battle royale en escuadras con habilidades únicas y jugabilidad rápida enfocada en la
+                        cooperación.
+                    </p>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <section class="videos" id="gameplays">
+        <h2>Gameplays</h2>
+
+        <div class="contenedor-videos">
+
+            <div class="card">
+                <video controls>
+                    <source src="videos/fornite.mp4" type="video/mp4">
+                </video>
+                <h3>Gameplay Fortnite</h3>
+            </div>
+
+            <div class="card">
+                <video controls>
+                    <source src="videos/leagueoflegends.mp4" type="video/mp4">
+                </video>
+                <h3>Gameplay LoL</h3>
+            </div>
+
+            <div class="card">
+                <iframe src="https://www.youtube.com/embed/qiDaMwFkLnA" allowfullscreen>
+                </iframe>
+                <h3>Gameplay Apex</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer" id="contacto">
+
+        <div class="footer-contenido">
+
+            <div class="footer-info">
+                <h3>Gamer Week</h3>
+                <p><strong>Email:</strong> contacto@gamerweek.com</p>
+                <p><strong>Teléfono:</strong> +56 9 1234 5678</p>
+                <p><strong>Dirección:</strong> Santiago, Chile</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Secciones</h3>
+                <a href="#inicio">Inicio</a>
+                <a href="#juegos">Juegos</a>
+                <a href="#gameplays">Gameplays</a>
+                <a href="#nombre">Contacto</a>
+            </div>
+
+            <div class="footer-form">
+                <h3>Contáctanos</h3>
+
+                <form action="gracias.html">
+                    <input type="text" id="nombre" placeholder="Nombre" required>
+                    <input type="email" placeholder="Correo" required>
+                    <textarea placeholder="Mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
         </div>
 
-    </div>
-</header>
-
-<section class="productos" id="juegos">
-    <h2>Video juegos Destacados</h2>
-
-    <div class="contenedor-productos">
-
-        <div class="card">
-            <img src="img/Fortnite.jpg" alt="Fornite">
-            <h3>Fornite</h3>
-            <p>Juego battle royale donde 100 jugadores compiten por ser el último en pie en un mapa dinámico con construcción estratégica.</p>
+        <div class="footer-bottom">
+            <p>© 2026 Gamer Week | Todos los derechos reservados</p>
         </div>
 
-        <div class="card">
-            <img src="img/LeagueofLegends.jpg" alt="LeagueofLegends">
-            <h3>League of Legends</h3>
-            <p>Juego de estrategia 5v5 donde el trabajo en equipo y la táctica son clave para destruir la base enemiga.</p>
-        </div>
-
-        <div class="card">
-            <img src="img/Apex.jpg" alt="Apex">
-            <h3>Apex</h3>
-            <p>Battle royale en escuadras con habilidades únicas y jugabilidad rápida enfocada en la cooperación.</p>
-        </div>
-
-    </div>
-</section>
-
-<section class="videos" id="gameplays">
-    <h2>Gameplays</h2>
-
-    <div class="contenedor-videos">
-
-        <div class="card">
-            <video controls>
-                <source src="videos/fornite.mp4" type="video/mp4">
-            </video>
-            <h3>Gameplay Fortnite</h3>
-        </div>
-
-        <div class="card">
-            <video controls>
-                <source src="videos/leagueoflegends.mp4" type="video/mp4">
-            </video>
-            <h3>Gameplay LoL</h3>
-        </div>
-
-        <div class="card">
-            <iframe 
-                src="https://www.youtube.com/embed/qiDaMwFkLnA"
-                allowfullscreen>
-            </iframe>
-            <h3>Gameplay Apex</h3>
-        </div>
-
-    </div>
-</section>
-
-<footer class="footer" id="contacto">
-
-    <div class="footer-contenido">
-
-        <div class="footer-info">
-            <h3>Gamer Week</h3>
-            <p><strong>Email:</strong> contacto@gamerweek.com</p>
-            <p><strong>Teléfono:</strong> +56 9 1234 5678</p>
-            <p><strong>Dirección:</strong> Santiago, Chile</p>
-        </div>
-
-        <div class="footer-links">
-            <h3>Secciones</h3>
-            <a href="#inicio">Inicio</a>
-            <a href="#juegos">Juegos</a>
-            <a href="#gameplays">Gameplays</a>
-            <a href="#nombre">Contacto</a>
-        </div>
-
-        <div class="footer-form">
-            <h3>Contáctanos</h3>
-
-            <form action="gracias.html">
-                <input type="text" id="nombre" placeholder="Nombre" required>
-                <input type="email" placeholder="Correo" required>
-                <textarea placeholder="Mensaje" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-
-    </div>
-
-    <div class="footer-bottom">
-        <p>© 2026 Gamer Week | Todos los derechos reservados</p>
-    </div>
-
-</footer>
+    </footer>
 
 </body>
+
 </html>

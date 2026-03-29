@@ -26,12 +26,12 @@ body {
 }
 
 .header-logo {
-    width: 200px;
+    width: 300px;
     filter: drop-shadow(0 0 8px #3bf679);
 }
 
 .header-texto h1 {
-    font-size: 45px;
+    font-size: 65px;
     color: #353d3c;
     text-shadow: 0 0 5px #fff;
 }
@@ -99,6 +99,21 @@ h2 {
     transform: translateY(-10px) scale(1.03);
     box-shadow: 0 10px 25px rgba(0,0,0,0.6);
 }
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Evita que cambie el color al visitar */
+.card-link:visited {
+    color: inherit;
+}
+
+/* Opcional: también al pasar el mouse */
+.card-link:hover {
+    color: inherit;
+}
 
 .card:hover img,
 .card:hover video,
@@ -123,6 +138,7 @@ h2 {
 
 .footer h3 {
     color: #3bf679;
+    padding: 20px;
 }
 
 .footer-links a {
