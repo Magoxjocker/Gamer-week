@@ -1,29 +1,30 @@
-/* RESET */
+/* ====================== RESET ====================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* BODY */
+/* ====================== BODY GENERAL ====================== */
 body {
-    font-family: system-ui;
+    font-family: system-ui, -apple-system, sans-serif;
     background: #353d3c;
     color: #dddddd;
+    line-height: 1.6;
 }
 
-/* HEADER */
+/* ====================== HEADER ====================== */
 .header {
     background: linear-gradient(135deg, #274941, #3bf679);
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .header-contenido {
     display: flex;
-    gap: 15px;
     justify-content: center;
-    flex-wrap: wrap;
     align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 .header-logo {
@@ -34,14 +35,15 @@ body {
 .header-texto h1 {
     font-size: 65px;
     color: #353d3c;
-    text-shadow: 0 0 5px #fff;
+    text-shadow: 0 0 10px #fff;
 }
 
 .header-texto p {
-    opacity: 0.7;
+    opacity: 0.8;
+    font-size: 1.1rem;
 }
 
-/* SECCIONES */
+/* ====================== SECCIONES ====================== */
 .productos, .videos {
     margin: 40px 20px;
     border-radius: 15px;
@@ -51,38 +53,41 @@ body {
 
 .productos {
     background: #2f3736;
-    padding: 30px;
 }
 
 .videos {
     background: linear-gradient(135deg, #274941, #3bf679);
 }
 
-/* TITULOS */
 h2 {
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 30px 0 40px;
+    font-size: 2.2rem;
+    color: #3bf679;
+    text-shadow: 0 0 10px #2f3736;
 }
 
-/* CONTENEDORES */
+/* ====================== CONTENEDORES ====================== */
 .contenedor-productos,
 .contenedor-videos {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
     flex-wrap: wrap;
 }
 
-/* CARDS */
+/* ====================== CARDS ====================== */
 .card {
     background: #274941;
     width: 260px;
     border-radius: 20px;
-    padding: 10px;
+    padding: 12px;
     border: 5px solid;
     border-image: linear-gradient(45deg, #3bf679, #274941) 1;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 260px;
+    max-width: 280px;
 }
 
 .card img,
@@ -95,25 +100,20 @@ h2 {
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* HOVER EFECTOS */
+.card h3 {
+    margin: 15px 0 10px;
+    color: #3bf679;
+}
+
 .card:hover {
     transform: translateY(-10px) scale(1.03);
     box-shadow: 0 10px 25px rgba(0,0,0,0.6);
 }
+
 .card-link {
     text-decoration: none;
     color: inherit;
     display: block;
-}
-
-/* Evita que cambie el color al visitar */
-.card-link:visited {
-    color: inherit;
-}
-
-/* Opcional: también al pasar el mouse */
-.card-link:hover {
-    color: inherit;
 }
 
 .card:hover img,
@@ -123,76 +123,134 @@ h2 {
     filter: brightness(1.1);
 }
 
-/* FOOTER */
+/* ====================== FOOTER ====================== */
 .footer {
     background: linear-gradient(135deg, #1f2a28, #274941);
     padding: 40px 20px;
+    margin-top: 40px;
 }
 
 .footer-contenido {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 30px;
     text-align: center;
-    padding: 20px;
-
 }
 
 .footer h3 {
     color: #3bf679;
-    padding: 20px;
+    margin-bottom: 15px;
 }
 
 .footer-links a {
     display: block;
     color: #ddd;
     text-decoration: none;
+    padding: 6px 0;
 }
 
 .footer-links a:hover {
     color: #3bf679;
 }
 
-/* FORM */
+.footer-logo{
+    max-width: 250px;
+}
+
+/* ====================== FORMULARIO DE CONTACTO ====================== */
+.footer-form {
+    max-width: 320px;
+    width: 100%;
+}
+
 .footer-form form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
 }
 
 .footer-form input,
 .footer-form textarea {
-    padding: 10px;
+    padding: 12px 14px;
     border-radius: 6px;
-    border: none;
+    border: 2px solid #3bf679;
+    background: #2f3736;
+    color: #ddd;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.footer-form input:focus,
+.footer-form textarea:focus {
+    outline: none;
+    border-color: #2edc63;
+    box-shadow: 0 0 8px #3bf679;
 }
 
 .footer-form textarea {
-    height: 80px;
+    height: 90px;
+    resize: vertical;
 }
 
-/* LOGO FOOTER */
-.footer-logo {
-    width: 180px;
-}
-
-.footer-bottom{
-    text-align: center;
-}
-
-/* BOTONES */
 button {
-    padding: 10px;
+    padding: 12px 20px;
     background: #3bf679;
+    color: #353d3c;
+    font-weight: bold;
     border: none;
     border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 5px;
 }
 
 button:hover {
     background: #2edc63;
 }
 
-/* SCROLL */
-html {
-    scroll-behavior: smooth;
+/* ====================== MENSAJE DE GRACIAS ====================== */
+.card-gracias {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.mensaje-gracias {
+    font-size: 1.45rem;
+    line-height: 1.6;
+}
+
+/* ====================== PIE DE PÁGINA ====================== */
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(59, 246, 121, 0.2);
+    color: #888;
+}
+
+/* ====================== RESPONSIVE ====================== */
+@media (max-width: 768px) {
+    .header-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .header-logo {
+        width: 220px;
+    }
+    
+    .header-texto h1 {
+        font-size: 48px;
+    }
+
+    .footer-contenido {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-form {
+        max-width: 100%;
+    }
 }
